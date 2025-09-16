@@ -1,69 +1,62 @@
-# React + TypeScript + Vite
+# Portfolio - Johan Yindou
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 *Portfolio personnel développé avec React .*
 
-Currently, two official plugins are available:
+Ce site présente mon parcours, mes projets, mon CV, ainsi que mes moyens de contact professionnels.  
+Il met en valeur mes compétences techniques à travers une interface moderne, responsive, et dynamique.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨Fonctionnalités
 
-## Expanding the ESLint configuration
+- 🌙 Mode clair / sombre
+- 📱 Responsive design (mobile, tablette, desktop)
+- 🔗 Liens vers mes réseaux sociaux (GitHub, LinkedIn, Instagram)
+- 📁 Accès à mon CV
+- 🧠 Navigation sans rechargement (SPA via React Router)
+- 🧩 Visualisation de mes projets réalisés avec détails, technologies utilisées et liens de démo / code
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Stack technique
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** – Framework JavaScript pour interface utilisateur
+- **TypeScript** – Superset de JavaScript avec typage statique
+- **React Router** – Navigation côté client
+- **Material UI (MUI)** – Composants UI modernes
+- **React Icons** – Intégration d’icônes vectorielles
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 💻 Installation locale
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Si tu veux cloner le projet pour le lancer en local :
+
+```bash
+# Clone le dépôt
+git clone https://github.com/JohanYindou/portfolio.git // coriger le lien
+
+# Va dans le dossier
+cd portfolio
+
+# Installe les dépendances
+npm install
+
+# Lance le serveur de développement
+npm run dev
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ Assure-toi d'avoir Node.js ≥ 16 et npm installés.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌐 Démo en ligne
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+👉 https://johanyindou.dev
+ (remplacer par le vrai lien si dispo)
+
+## 👤 Auteur
+
+- Nom : Johan Yindou
+- LinkedIn : [linkedin.com/in/johanyindou](https://linkedin.com/in/johanyindou)
+- GitHub : [github.com/JohanYindou](https://github.com/JohanYindou)
+
+## 📄 Licence
+
+Ce projet est sous licence **MIT**.  
+Tu es libre de l'utiliser, le modifier et le redistribuer avec mention du copyright.
+Voir le fichier [`LICENSE`](./LICENSE) pour plus de détails.
