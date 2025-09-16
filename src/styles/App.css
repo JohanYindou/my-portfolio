@@ -12,6 +12,11 @@ body,
   text-align: center;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Variables et optimisations globales */
 :root {
   font-synthesis: none;
