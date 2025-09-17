@@ -13,7 +13,6 @@ const Home: React.FC = () => {
       {/* --- Conteneur 2 : Section des projets --- */}
       <ProjectsSection />
       {/* --- Conteneur 3 : Pied de page --- */}
-
     </>
   );
 };
