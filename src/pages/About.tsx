@@ -9,7 +9,12 @@ const About: React.FC = () => {
             <Box sx={{ my: 8 }}>
                 <Typography variant="h1">About</Typography>
                 <Typography variant="body1">En cours de construction</Typography>
-            </Box> 
+            </Box>
+            {/* 
+                Mettre en place une presentation de moi ici avec
+                mes infos personnelles et mes competences techniques 
+                mes objectifs professionnelles.
+            */}
       </Container>
     );
 };
