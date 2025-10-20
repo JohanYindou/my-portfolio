@@ -42,7 +42,7 @@ const AboutText: React.FC = () => {
         Je suis ouvert à de nouvelles <b>opportunités professionnelles</b> où je
         peux contribuer, apprendre et évoluer. Si mon profil correspond à vos
         besoins, n’hésitez pas à{' '}
-        <Link href='mailto:jyindou@gmail.com' underline='hover'>
+        <Link href='/contact' underline='hover'>
           me contacter
         </Link>
         .
