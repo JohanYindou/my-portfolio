@@ -3,8 +3,8 @@ import { Typography, Chip, Stack, Box, Divider } from '@mui/material';
 import { skills } from '../data/skills';
 import { motion } from 'framer-motion';
 
-const MotionBox = motion(Box);
-const MotionChip = motion(Chip);
+const MotionBox = motion.create(Box);
+const MotionChip = motion.create(Chip);
 
 const SkillsList: React.FC = () => {
   return (
