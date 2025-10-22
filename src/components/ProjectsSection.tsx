@@ -9,6 +9,7 @@ import {
   CardMedia,
 } from '@mui/material';
 import { projects } from '../data/projects';
+import { motion } from 'framer-motion';
 
 /* 
 --- 
@@ -29,27 +30,32 @@ const ProjectsSection: React.FC = () => {
         <Grid container spacing={4} justifyContent='center'>
           {projects.map((project) => (
             <Grid key={project.id}>
-              <Card
-                sx={{
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                }}>
-                <CardMedia
-                  component='img'
-                  height='200'
-                  image={project.image}
-                  alt={`Screenshot du projet ${project.name}`}
-                />
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography gutterBottom variant='h5' component='h3'>
-                    {project.name}
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    Technologies : {project.technologies.join(', ')}
-                  </Typography>
-                </CardContent>
-              </Card>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: 'easeOut' }}>
+                <Card
+                  sx={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                  }}>
+                  <CardMedia
+                    component='img'
+                    height='200'
+                    image={project.image}
+                    alt={`Screenshot du projet ${project.name}`}
+                  />
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography gutterBottom variant='h5' component='h3'>
+                      {project.name}
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Technologies : {project.technologies.join(', ')}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </motion.div>
             </Grid>
           ))}
         </Grid>
