@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}>
         <Box textAlign='center' mb={4}>
-          <Typography variant='h4' fontWeight={700} gutterBottom>
+          <Typography variant='h3' fontWeight='bold' gutterBottom>
             Contactez-moi
           </Typography>
           <Typography variant='body1' color='text.secondary'>
