@@ -20,7 +20,8 @@ const Navbar: React.FC = () => {
             theme.palette.mode === 'light'
               ? theme.palette.grey[200]
               : theme.palette.grey[800],
-          minHeight: 64,
+          minHeight: 70,
+          px: 4,
         }}>
         {/* Partie gauche : Nom */}
         <a href='/' className='logo'>

@@ -4,7 +4,19 @@ import { motion } from 'framer-motion';
 
 const HeaderSection: React.FC = () => {
   return (
-    <Container maxWidth='md' sx={{ textAlign: 'center', my: 8 }}>
+    <Container
+      maxWidth='md'
+      sx={{
+        textAlign: 'center',
+        my: 10,
+        p: 5,
+        borderRadius: '6',
+        backgroundColor: (theme) => theme.palette.background.paper,
+        boxShadow: (theme) =>
+          theme.palette.mode === 'light'
+            ? '0 8px 24px rgba(0,0,0,0.05)'
+            : '0 8px 24px rgba(0,0,0,0.3)',
+      }}>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,7 +34,7 @@ const HeaderSection: React.FC = () => {
             alt='Votre photo de profil'
             src='https://placehold.co/250x250/png'
           />
-          <Typography variant='h2' component='h1' gutterBottom>
+          <Typography variant='h3' component='h1' gutterBottom>
             Johan Yindou
           </Typography>
           <Typography variant='h5' color='text.secondary' gutterBottom>

@@ -19,7 +19,11 @@ Faut que j'upgrade la qualité des grids
 
 const ProjectsSection: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: 'action.hover', py: 8 }}>
+    <Box
+      sx={{
+        backgroundColor: (theme) => theme.palette.background.default,
+        py: 10,
+      }}>
       <Container maxWidth='lg' sx={{ my: 8 }}>
         <Typography
           variant='h4'
@@ -39,6 +43,14 @@ const ProjectsSection: React.FC = () => {
                     height: '100%',
                     display: 'flex',
                     flexDirection: 'column',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    '&:hover': {
+                      transform: 'translateY(-6px)',
+                      boxShadow: (theme) =>
+                        theme.palette.mode === 'light'
+                          ? '0 12px 24px rgba(0,0,0,0.1)'
+                          : '0 12px 24px rgba(0,0,0,0.5)',
+                    },
                   }}>
                   <CardMedia
                     component='img'

@@ -24,7 +24,11 @@ const SkillsList: React.FC = () => {
             p: 2,
             borderRadius: 1,
             boxShadow: '0 4px 10px rgba(0,0,0,0.05)',
-            backgroundColor: '#fff',
+            backgroundColor: (theme) => theme.palette.background.paper,
+            '&:hover': {
+              transform: 'translateY(-4px)',
+              transition: 'transform 0.3s ease',
+            },
           }}>
           <Typography
             variant='subtitle1'
@@ -42,7 +46,10 @@ const SkillsList: React.FC = () => {
                 sx={{
                   m: 0.25,
                   fontWeight: 500,
-                  backgroundColor: '#f0f0f0',
+                  backgroundColor: (theme) =>
+                    theme.palette.mode === 'light' ? '#f3f4f6' : '#334155',
+                  color: (theme) =>
+                    theme.palette.mode === 'light' ? '#111827' : '#f8fafc',
                   cursor: 'pointer',
                 }}
                 whileTap={{ scale: 0.95 }}
