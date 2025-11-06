@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Chip, Stack, Box, Divider } from '@mui/material';
-import { skills } from '../data/skills';
+import { skills } from '../../data/skills';
 import { motion } from 'framer-motion';
 
 const MotionBox = motion.create(Box);

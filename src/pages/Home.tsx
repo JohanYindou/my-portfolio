@@ -1,19 +1,19 @@
+// src/pages/Home.tsx
 import React from 'react';
-import '../styles/App.css';
-import HeaderSection from '../components/HeaderSection';
-import ProjectsSection from '../components/ProjectsSection';
+import { Box } from '@mui/material';
+import HeroSection from '../components/Home/HeroSection';
+import ServicesSection from '../components/Home/ServicesSection';
+import ProjectsBlock from '../components/Home/ProjectsBlock';
+import QuickContactSection from '../components/Home/QuickContactSection';
 
 const Home: React.FC = () => {
   return (
-    <>
-      {/* --- Menu de navigation (AppBar) --- */}
-
-      {/* --- Conteneur 1 : Entête du portfolio --- */}
-      <HeaderSection />
-      {/* --- Conteneur 2 : Section des projets --- */}
-      <ProjectsSection />
-      {/* --- Conteneur 3 : Pied de page --- */}
-    </>
+    <Box>
+      <HeroSection />
+      <ServicesSection />
+      <ProjectsBlock />
+      <QuickContactSection />
+    </Box>
   );
 };
 

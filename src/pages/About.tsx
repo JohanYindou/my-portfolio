@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Box, Typography, Paper } from '@mui/material';
-import AboutText from '../components/AboutText';
-import SkillsList from '../components/SkillsList';
+import AboutText from '../components/About/AboutText';
+import SkillsList from '../components/About/SkillsList';
 import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
