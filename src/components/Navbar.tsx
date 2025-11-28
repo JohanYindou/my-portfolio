@@ -124,6 +124,7 @@ const Navbar: React.FC = () => {
         backdropFilter: 'blur(12px)',
         border: 'none',
         borderRadius: 0,
+        borderBottom: theme.palette.mode === 'light' ? '1px solid #00000020' : 'none',
       }}>
       <Toolbar
         sx={{
@@ -195,7 +196,6 @@ const Navbar: React.FC = () => {
         </Box>
 
         <IconButton
-          color='inherit'
           onClick={handleDrawerToggle}
           sx={{ display: { md: 'none' } }}>
           <MenuIcon />
