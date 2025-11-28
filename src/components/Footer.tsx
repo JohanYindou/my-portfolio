@@ -18,11 +18,11 @@ const Footer: React.FC = () => {
           theme.palette.mode === 'light'
             ? theme.palette.text.secondary
             : theme.palette.text.primary,
-        borderTop: `1px solid ${
+        borderTop: theme.palette.mode === 'light' ? '1px solid #00000040' : 'none',
+        boxShadow:
           theme.palette.mode === 'light'
-            ? theme.palette.primary.main + '20' 
-            : 'rgba(255,255,255,0.08)'
-        }`,
+            ? '0 -4px 6px -2px rgba(0,0,0,0.08)'
+            : 'none',
       })}>
       <Container maxWidth='lg'>
         <Typography variant='body2'>

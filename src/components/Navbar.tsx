@@ -124,7 +124,11 @@ const Navbar: React.FC = () => {
         backdropFilter: 'blur(12px)',
         border: 'none',
         borderRadius: 0,
-        borderBottom: theme.palette.mode === 'light' ? '1px solid #00000020' : 'none',
+        borderBottom: theme.palette.mode === 'light' ? '1px solid #00000040' : 'none',
+        boxShadow:
+          theme.palette.mode === 'light'
+            ? '0 4px 6px -2px rgba(0,0,0,0.08)'
+            : 'none',
       }}>
       <Toolbar
         sx={{
