@@ -17,10 +17,6 @@ const ProjectsBlock: React.FC = () => {
     <Box
       sx={{
         py: 4,
-        background: (theme) =>
-          theme.palette.mode === 'light'
-            ? 'linear-gradient(180deg, #fff, #f9fafb)'
-            : 'linear-gradient(180deg, #1e293b, #0f172a)',
       }}>
       <Container maxWidth='lg'>
         <Box>

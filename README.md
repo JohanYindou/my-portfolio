@@ -28,7 +28,7 @@ Si tu veux cloner le projet pour le lancer en local :
 
 ```bash
 # Clone le dépôt
-git clone https://github.com/JohanYindou/portfolio.git // coriger le lien
+git clone https://github.com/JohanYindou/portfolio.git
 
 # Va dans le dossier
 cd portfolio
@@ -45,9 +45,7 @@ npm run dev
 
 ## 🌐 Démo en ligne
 
-
-👉 https://johanyindou.dev
- (remplacer par le vrai lien si dispo)
+👉 <https://johanyindou.dev>
 
 ## 👤 Auteur
 

@@ -22,10 +22,6 @@ const ServicesSection: React.FC = () => {
       viewport={{ once: true }}
       sx={{
         py: 10,
-        background: (theme) =>
-          theme.palette.mode === 'light'
-            ? 'linear-gradient(180deg, #f9fafb, #fff)'
-            : 'linear-gradient(180deg, #0f172a, #1e293b)',
       }}>
       <Container maxWidth='lg'>
         <Typography

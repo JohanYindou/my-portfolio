@@ -14,10 +14,6 @@ const HeroSection: React.FC = () => {
         textAlign: 'center',
         py: { xs: 8, md: 12, lg: 16 },
         px: 2,
-        background: (theme) =>
-          theme.palette.mode === 'light'
-            ? 'linear-gradient(180deg, #fff, #f9fafb)'
-            : 'linear-gradient(180deg, #1e293b, #0f172a)',
       }}>
       <Container maxWidth='md'>
         <Typography
